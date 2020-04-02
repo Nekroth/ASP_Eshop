@@ -1,0 +1,91 @@
+﻿* {
+    font-family: 'Poppins';
+}
+
+p {
+    font-size: 20px;
+}
+
+.Border {
+    background-color: palevioletred;
+    width: 100%;
+}
+
+.SocialIcons {
+    margin-top: 5px;
+}
+
+.Social {
+    display: flex;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    margin-left: 14%;
+}
+
+img {
+    width: 30px;
+    margin-top: 10px;
+    color: palevioletred;
+}
+
+#header-hr {
+    margin-left: 14%;
+    margin-right: 279px;
+    border-color: white;
+    background-color: white;
+}
+
+
+#debra {
+    font-size: 60px;
+    margin-top: 20px;
+    margin-left: 14%;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.Search {
+    display: flex;
+}
+
+
+#searchbar {
+    border-radius: 5px;
+    width: 805px;
+    height: 50px;
+    margin-left: 250px;
+    margin-top: 35px;
+    background-color: #e396b0;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+}
+
+#cart {
+    height: 80px;
+    width: 120px;
+    margin-top: 18px;
+    margin-left: 200px;
+    border-radius: 5px;
+    border-color: white;
+}
+
+
+.references  a {
+    text-decoration: none;
+    color: black;
+    margin-left: 60px;
+}
+
+
+.references {
+    font-size: 25px;
+    text-align: center;
+    padding-right: 4%;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
