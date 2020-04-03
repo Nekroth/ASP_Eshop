@@ -14,6 +14,9 @@ p {
 .SocialIcons {
     margin-top: 5px;
 }
+.SocialIcons2 {
+    margin-left: 40%;
+}
 
 .Social {
     display: flex;
@@ -23,24 +26,29 @@ p {
     width: 100%;
     margin-left: 14%;
 }
+.Social2 {
+    display: flex;
+    margin-left: 14%;
+    border-radius: 5px;
+    color: black;
+    width: 100%;
+}
 
 img {
     width: 30px;
     margin-top: 10px;
-    color: palevioletred;
 }
 
-#header-hr {
+.header-hr {
     margin-left: 14%;
     margin-right: 279px;
-    border-color: white;
-    background-color: white;
+    border-color: gray;
+    background-color: gray;
 }
 
 
 #debra {
-    font-size: 60px;
-    margin-top: 20px;
+    font-size: 50px;
     margin-left: 14%;
     color: white;
     margin-bottom: 5px;
@@ -48,6 +56,7 @@ img {
 
 .Search {
     display: flex;
+    padding-bottom: 15px;
 }
 
 
@@ -55,9 +64,9 @@ img {
     border-radius: 5px;
     width: 805px;
     height: 50px;
-    margin-left: 250px;
-    margin-top: 35px;
-    background-color: #e396b0;
+    margin-left: 150px;
+    margin-top: 10px;
+    background-color: #FFAEAE;
     border-top-width: 0px;
     border-right-width: 0px;
     border-bottom-width: 0px;
@@ -87,5 +96,12 @@ img {
     padding-right: 4%;
     margin-top: 20px;
     font-weight: bold;
+}
+.FooterMain {
+    display: flex;
+    margin-left: 12%;
+}
+.FooterMain div {
+    margin-left: 50px;
 }
 
