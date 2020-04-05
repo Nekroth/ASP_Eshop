@@ -13,6 +13,16 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        public ActionResult Products()
+        {
+            return View();
+        }
+
+        public ActionResult Blog()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -20,10 +30,15 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-        public ActionResult Contact(int? id)
+        public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        public ActionResult Cart()
+        {
             return View();
         }
     }

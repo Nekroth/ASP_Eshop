@@ -1,17 +1,79 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<div class="Banner">
+    <img src="~/Images/contactBanner.png" alt="Contact_Banner" />
+</div>
+<div class="Main">
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+    <div class="Flex">
+        <div class="Form">
+            <form action="" method="get">
+                <label>
+                    <strong>Your Name</strong>
+                    <br />
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           required
+                           minlength="3"
+                           maxlength="10"
+                           placeholder="Full Name">
+                </label>
+                <br />
+                <label>
+                    <strong>Your Email</strong>
+                    <br />
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           required
+                           minlength="3"
+                           maxlength="10"
+                           placeholder="Email address">
+                </label>
+                <br />
+                <label>
+                    <strong>Subject</strong>
+                    <br />
+                    <input type="text"
+                           id="subject"
+                           name="subject"
+                           required
+                           minlength="3"
+                           maxlength="10"
+                           placeholder="Subject">
+                </label>
+                <br />
+                <label>
+                    <strong>Your Message</strong>
+                    <br />
+                    <textarea placeholder="Message"></textarea>
+                </label>
+                <br />
+                <input type="submit" value="Send Message" />
+            </form>
+        </div>
+        <div class="Contact">
+            <div>
+                <h1>Contact US</h1>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+            <div>
+                <h2>Address</h2>
+                <p>123 Main Street, Anytown, CA 12345 - USA</p>
+            </div>
+            <div>
+                <h2>Phone</h2>
+                <p>Mobile: (08) 123 456 789</p>
+                <p>Hotline: 1009 678 456</p>
+            </div>
+            <div>
+                <h2>Email</h2>
+                <p>youremail@domain.com</p>
+                <p>mail@yourmail.com</p>
+            </div>
+        </div>
+    </div>
+</div>

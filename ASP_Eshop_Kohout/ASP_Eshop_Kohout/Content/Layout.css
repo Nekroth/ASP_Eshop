@@ -34,7 +34,7 @@ p {
     width: 100%;
 }
 
-img {
+.Border img {
     width: 30px;
     margin-top: 10px;
 }
@@ -103,5 +103,28 @@ img {
 }
 .FooterMain div {
     margin-left: 50px;
+}
+.Banner img {
+    width: 100%;
+}
+.Main {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.Flex {
+    display: flex;  
+}
+.Contact {
+    margin-left: 20%;
+}
+.Welcome img {
+    float: left;
+}
+.VMG {
+    display: flex;
+    justify-content: space-between;
+}
+.Sidenav {
+    margin-left: 20%;
 }
 
