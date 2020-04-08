@@ -58,7 +58,12 @@ p {
     display: flex;
     padding-bottom: 15px;
 }
-
+.miniblog img {
+    float: left;
+    height: 80px;
+    width: 130px;
+    margin-right: 15px;
+}
 
 #searchbar {
     border-radius: 5px;
@@ -114,17 +119,54 @@ p {
 .Flex {
     display: flex;  
 }
+.Flex2 {
+    display: flex;
+    justify-content: center;
+}
+.Flex3 {
+    display: flex;
+    justify-content: space-between;
+}
+.ProductGrid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+}
+.ProductGrid2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+}
+.ProductGrid img , .ProductGrid2 img {
+    width: 300px;
+    height: 300px;
+}
+.Middle {
+    text-align: center;
+}
 .Contact {
     margin-left: 20%;
 }
+.Blogs img {
+    width: 700px;
+    height: 400px;
+}
 .Welcome img {
     float: left;
+    margin: 0 14px 0 0;
 }
 .VMG {
+    clear: both;
     display: flex;
     justify-content: space-between;
 }
 .Sidenav {
     margin-left: 20%;
+}
+.iconify {
+    width: 27px;
+    height: 27px;
 }
 

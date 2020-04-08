@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
@@ -8,16 +8,16 @@ using System.Web;
 namespace WebApplication1.Models
 {
     [DbConfigurationType(typeof(MySql.Data.EntityFramework.MySqlEFConfiguration))]
-    public class MyContext : DbContext
+    public class MainContext : DbContext
     {
-        public DbSet<Person> People { get; set; }
+        public DbSet<Product> products { get; set; }
+        public DbSet<Blog> blogs { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
     }
 
-}*/
+}

@@ -154,12 +154,15 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\CartController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\MyContext.cs" />
-    <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\Blog.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\MainContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -173,9 +176,24 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\aboutBanner.png" />
+    <Content Include="Images\aboutImg.png" />
     <Content Include="Images\blogBanner.jpg" />
+    <Content Include="Images\blog_01.jpg" />
+    <Content Include="Images\blog_02.jpg" />
+    <Content Include="Images\blog_03.jpg" />
     <Content Include="Images\contactBanner.png" />
+    <Content Include="Images\fashionsale_01.png" />
+    <Content Include="Images\fashionsale_02.png" />
     <Content Include="Images\homepageBanner.png" />
+    <Content Include="Images\Product01.jpg" />
+    <Content Include="Images\Product02.jpg" />
+    <Content Include="Images\Product03.jpg" />
+    <Content Include="Images\Product04.jpg" />
+    <Content Include="Images\Product05.jpg" />
+    <Content Include="Images\Product06.jpg" />
+    <Content Include="Images\Product07.jpg" />
+    <Content Include="Images\Product08.jpg" />
+    <Content Include="Images\Product09.jpg" />
     <Content Include="Images\productsBanner.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -209,6 +227,8 @@
     <Content Include="Views\Home\Blog.cshtml" />
     <Content Include="Views\Home\Products.cshtml" />
     <Content Include="Views\Home\Cart.cshtml" />
+    <Content Include="Views\Products\Index.cshtml" />
+    <Content Include="Views\Cart\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

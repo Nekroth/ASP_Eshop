@@ -4,4 +4,71 @@
 
 <div class="container body-content">
    <img src="~/Images/homepageBanner.png" alt="Homepage_Banner" />
+    <div class="Middle">
+        <h4>Arrivals Product</h4>
+        <div class="Flex2">
+            <div>
+                Top Sell
+            </div>
+            <div>
+                Best Sellers
+            </div>
+            <div>
+                New Arrivals
+            </div>
+        </div>
+    </div>
+    <div class="ProductGrid">
+        @foreach (var item in ViewBag.Products)
+        {
+            <div>
+                <img src="@item.Image" alt="@item.Name" />
+                <h4>@item.Name</h4>
+                <img src="" alt="stars" />
+                <p>$79.00</p>
+            </div>
+        }
+    </div>
+    <div class="Flex">
+        <img src="~/Images/fashionsale_01.png" alt="fashionsale_01" />
+        <img src="~/Images/fashionsale_02.png" alt="fashionsale_02" />
+    </div>
+    <div class="Flex3">
+        <div>
+            <h4>Top Rated</h4>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <div>
+            <h4>Featured</h4>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <div>
+            <h4>Bestseller Products</h4>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </div>
 </div>
