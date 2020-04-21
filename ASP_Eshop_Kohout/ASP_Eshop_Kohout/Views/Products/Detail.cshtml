@@ -28,7 +28,9 @@
 
             </div>
         </div>
-        <a href="@Url.Action("BuyProduct","Products",new { id = ViewBag.Product.ID })">Buy it now</a>
+        <a href="@Url.Action("AddItem","Cart",new { name = ViewBag.Product.Name, image = ViewBag.Product.Image})"><button class="buy-button">Add to cart</button></a>
+        <br />
+        <a href=""><button class="buy-button">Buy it now</button></a>
     }
     <div class="drcss">
 

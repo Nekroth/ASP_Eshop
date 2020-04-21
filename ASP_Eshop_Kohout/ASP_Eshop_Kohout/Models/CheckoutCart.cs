@@ -7,6 +7,6 @@ namespace WebApplication1.Models
 {
     public class CheckoutCart
     {
-        public List<Product> products { get; set; }
+        public List<Product> products = new List<Product>();
     }
 }

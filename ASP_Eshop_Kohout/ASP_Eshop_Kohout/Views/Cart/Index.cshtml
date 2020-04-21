@@ -14,22 +14,20 @@
                 <th>Total</th>
                 <th>Remove</th>
             </tr>
-            <tr>
-                <td><img class="td-img" src="~/Images/Product01.jpg" alt="boty"></td>
-                <td>Saty</td>
-                <td>$39.00</td>
-                <td><input type="number"></td>
-                <td>$39.00</td>
-                <td><a href="x">X</a></td>
-            </tr>
-            <tr>
-                <td><img class="td-img" src="~/Images/Product01.jpg" alt=""></td>
-                <td>Saty</td>
-                <td>$39.00</td>
-                <td><input type="number"></td>
-                <td>$39.00</td>
-                <td><a href="x">X</a></td>
-            </tr>
+            @if (ViewBag.Items != null)
+            {
+                foreach (var item in ViewBag.Items) 
+                {
+                    <tr>
+                        <td><img class="td-img" src="~/Images/@item.Image" alt="@item.Image"></td>
+                        <td>@item.Name</td>
+                        <td>$39.00</td>
+                        <td><input type="number"></td>
+                        <td>$39.00</td>
+                        <td><a href="x">X</a></td>
+                    </tr>
+                }
+            }
         </table>
         <div class="button-table-posun">
             <button class="button-table">Update Cart</button>

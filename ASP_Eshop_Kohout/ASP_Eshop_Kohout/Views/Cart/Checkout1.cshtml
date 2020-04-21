@@ -69,35 +69,36 @@
         </div>
 
         <div class="checkout-2str">
-            <div class="div-flex">
-                <img class="checkout-img" src="Pictures/boty1.jpg" alt="boty">
-                <h5>11. Product with video</h5>
-                <p class="checkout-p">$39.00</p>
-            </div>
-            <div class="div-flex">
-                <img class="checkout-img" src="Pictures/boty1.jpg" alt="boty">
-                <h5>11. Product with video</h5>
-                <p class="checkout-p">$39.00</p>
-            </div>
-            <hr>
-            <div>
+            @if (ViewBag.Items != null)
+            {
+                foreach (var item in ViewBag.Items)
+                {
+                    <div class="div-flex">
+                        <img class="checkout-img" src="~/Images/@item.Image" alt="@item.Image">
+                        <h5>@item.Name</h5>
+                        <p class="checkout-p">$39.00</p>
+                    </div>
+                }
+            }
+                <hr>
+                <div>
+                    <div class="div-flex">
+                        <h4>Subtotal</h4>
+                        <p class="checkout-p1">$89.00</p>
+                    </div>
+                    <div class="div-flex">
+                        <h4>Shipping</h4>
+                        <p class="checkout-p1-1">Calculated at next step</p>
+                    </div>
+                </div>
+                <hr>
                 <div class="div-flex">
                     <h4>Subtotal</h4>
-                    <p class="checkout-p1">$89.00</p>
-                </div>
-                <div class="div-flex">
-                    <h4>Shipping</h4>
-                    <p class="checkout-p1-1">Calculated at next step</p>
+                    <p class="checkout-p1-1">USD</p>
+                    <p class="checkout-p2">$89.00</p>
                 </div>
             </div>
-            <hr>
-            <div class="div-flex">
-                <h4>Subtotal</h4>
-                <p class="checkout-p1-1">USD</p>
-                <p class="checkout-p2">$89.00</p>
-            </div>
-        </div>
 
-    </div>
-</body>
+        </div>
+    </body>
 </html>

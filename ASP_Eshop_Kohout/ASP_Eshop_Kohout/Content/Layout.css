@@ -226,6 +226,12 @@ i.fab {
 .drcss {
     clear: both;
 }
+.buy-button {
+    background-color: #FF9899;
+    border-color: #FF9899;
+    border-radius: 5px;
+    width: 100px;
+}
 /*Blog Detail*/
 .blogdetail h3 ,
 .blogdetail h5{
