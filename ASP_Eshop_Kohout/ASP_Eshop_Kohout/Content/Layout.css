@@ -1,11 +1,17 @@
 ﻿* {
-    font-family: 'Poppins';
+    font-family: sans-serif !important;
 }
-
+body {
+    font-family: sans-serif !important;
+}
 p {
     font-size: 20px;
 }
-
+a {
+    text-decoration: none;
+    color: black;
+}
+/*Home Header*/
 .Border {
     background-color: #FF9899;
     width: 100%;
@@ -15,7 +21,12 @@ p {
     margin-top: 5px;
 }
 .SocialIcons2 {
-    margin-left: 40%;
+    margin-left: 50%;
+}
+
+.SocialIcons2 img {
+    width: 30px;
+    height: 30px;
 }
 
 .Social {
@@ -25,6 +36,22 @@ p {
     font-weight: bold;
     width: 100%;
     margin-left: 14%;
+}
+.Account-select {
+    margin-left: 49%;
+    background-color: #FF9899;
+    color: #FF9899;
+}
+.select-upravit {
+    border-style: hidden;
+    background-color: #FF9899;
+    color: white;
+    font-size: 20px;
+}
+#Pipe {
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .Social2 {
     display: flex;
@@ -58,11 +85,16 @@ p {
     display: flex;
     padding-bottom: 15px;
 }
+/*Blog List SideBar*/
 .miniblog img {
     float: left;
     height: 80px;
     width: 130px;
     margin-right: 15px;
+}
+.miniblog {
+    margin-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 #searchbar {
@@ -127,6 +159,11 @@ p {
     display: flex;
     justify-content: space-between;
 }
+/*Product List*/
+.stars img {
+    width: 50px;
+    height: 50px;
+}
 .ProductGrid {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -149,10 +186,19 @@ p {
 .Contact {
     margin-left: 20%;
 }
+/*Blog List*/
 .Blogs img {
     width: 700px;
     height: 400px;
 }
+.Blogs {
+    margin-top: 20px;
+}
+.Blogs a {
+    width: 50px;
+}
+
+/*Home About*/
 .Welcome img {
     float: left;
     margin: 0 14px 0 0;
@@ -165,8 +211,181 @@ p {
 .Sidenav {
     margin-left: 20%;
 }
+
 .iconify {
     width: 27px;
     height: 27px;
 }
+i.fab {
+    font-size: 50px;
+}
+/*Product Detail*/
+.productdetail img {
+    float: right;
+}
+.drcss {
+    clear: both;
+}
+/*Blog Detail*/
+.blogdetail h3 ,
+.blogdetail h5{
+    text-align: center;
+}
+.blogdetail {
 
+}
+.tags {
+
+}
+/*Cart index*/
+.table-posun {
+    margin-left: 25%;
+    width: 55%;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid lightgray;
+}
+
+.td-img {
+    width: 200px;
+}
+
+.button-table-posun {
+    margin-left: 64%;
+}
+
+.button-table {
+    background-color: black;
+    border-color: black;
+    color: white;
+    height: 40px;
+}
+
+.section-total {
+    margin-left: 25%;
+    margin-top: 5px;
+}
+
+.Total-all {
+    display: flex;
+}
+
+.select-total {
+    width: 20%;
+}
+
+.button-total {
+    background-color: black;
+    border-color: black;
+    color: white;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.input-total {
+    margin-top: 5px;
+}
+
+.total-total {
+    margin-left: 19%;
+}
+
+.total-table {
+    width: 465px;
+    height: 80px;
+}
+/*Cart Checkout1*/
+.checkout-posun1 {
+    margin-left: 25%;
+}
+
+.checkout-cesta {
+    display: flex;
+}
+
+.cesta-mezery {
+    margin-left: 15px;
+    font-size: 13px;
+    color: grey;
+}
+
+.cesta-mezery1 {
+    color: grey;
+    font-size: 13px;
+}
+
+#already-account {
+    margin-left: 100px;
+    margin-top: 28px;
+    font-size: 15px;
+}
+
+.div-flex {
+    display: flex;
+}
+
+.input-check {
+    margin-top: 20px;
+}
+
+.checkout-input-dlouhy {
+    border-radius: 5px;
+    width: 580px;
+    height: 40px;
+    border-width: 1px;
+    margin: 5px;
+    border-color: lightgray;
+}
+
+.checkout-input-kratky {
+    border-radius: 5px;
+    width: 282px;
+    height: 40px;
+    border-width: 1px;
+    margin: 5px;
+}
+
+.h5-return {
+    color: #FF9899;
+}
+
+.checkout-button {
+    margin-left: 55%;
+    background-color: #FF9899;
+    border-color: #FF9899;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.checkout-2str {
+    margin-top: 90px;
+    margin-left: 80px;
+}
+
+.checkout-img {
+    width: 120px;
+}
+
+.checkout-p {
+    margin-left: 90px;
+    margin-top: 50px;
+}
+
+.checkout-p1 {
+    margin-left: 70%;
+    margin-top: 22px;
+}
+
+.checkout-p1-1 {
+    margin-left: 61%;
+    margin-top: 22px;
+    font-size: 13px;
+    color: grey;
+}
+
+.checkout-p2 {
+    margin-left: 1%;
+    margin-top: 22px;
+}

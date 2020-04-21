@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="Banner">
+    <img src="~/Images/productdetailBanner.png" alt="ProductsDetail_Banner" />
+</div>
+<div class="container body-content">
+    @if (ViewBag.Product != null)
+    {
+        <div class="productdetail">
+            <img src="/Images/@ViewBag.Product.Image" alt="@ViewBag.Product.Name" />
+            <h4>@ViewBag.Product.Name</h4>
+            <img src="" alt="rating" />
+            <h4>Price</h4>
+            <p>Vendor: Vendor 5</p>
+            <p>SKU: 101</p>
+            <p>Availability: In Stock</p>
+            <br />
+            <p>
+                On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment,
+                so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will
+            </p>
+
+            <div>
+
+            </div>
+        </div>
+        <a href="@Url.Action("BuyProduct","Products",new { id = ViewBag.Product.ID })">Buy it now</a>
+    }
+    <div class="drcss">
+
+    </div>
+
+</div>

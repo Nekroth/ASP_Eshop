@@ -1,0 +1,103 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Checkout1</title>
+    <link href="~/Content/Layout.css" rel="stylesheet" type="text/css" media="screen" runat="server" />
+    <script src="https://code.iconify.design/1/1.0.5/iconify.min.js"></script>
+    <script src="https://kit.fontawesome.com/35e48aa174.js" crossorigin="anonymous"></script>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="div-flex">
+        <div class="checkout-posun1">
+            <h1 class="debra-logo">Debra</h1>
+            <div class="checkout-cesta">
+                <h3 class="cesta-mezery1">Cart</h3>
+                <p class="cesta-mezery">&#8594</p>
+                <h3 class="cesta-mezery">Information</h3>
+                <p class="cesta-mezery">&#8594</p>
+                <h3 class="cesta-mezery">Shipping</h3>
+                <p class="cesta-mezery">&#8594</p>
+                <h3 class="cesta-mezery">Payment</h3>
+            </div>
+            <div class="div-flex">
+                <h2>Contact information</h2>
+                <h3 id="already-account">Already have an account? Log in</h3>
+            </div>
+            <div>
+                <div class="div-flex">
+                    <input class="checkout-input-dlouhy" type="text" placeholder="Email or mobile phone number">
+                    <br>
+                </div>
+                <div class="div-flex">
+                    <input class="input-check" type="checkbox">
+                    <p>Keep me up to date on news and exclusive offers</p>
+                </div>
+            </div>
+            <div>
+                <h2>Shipping address</h2>
+                <input class="checkout-input-kratky" placeholder="First name(optional)" type="text">
+                <input class="checkout-input-kratky" placeholder="Last name" type="text">
+                <br>
+                <input class="checkout-input-dlouhy" placeholder="Address" type="text">
+                <br>
+                <input class="checkout-input-dlouhy" placeholder="Apartment, suite, etc. (optional)" type="text">
+                <br>
+                <input class="checkout-input-dlouhy" placeholder="City" type="text">
+                <br>
+                <select class="checkout-input-kratky">
+                    <option value="My Account">Czechia</option>
+                </select>
+                <input class="checkout-input-kratky" placeholder="Postal code" type="text">
+                <div class="div-flex">
+                    <input class="input-check" type="checkbox">
+                    <p>Save this information for next time</p>
+                </div>
+                <div class="div-flex">
+                    <a href="@Url.Action("Index","Cart")"><h5 class="h5-return">&#8592 Return to cart</h5></a>
+                    <a href="@Url.Action("Checkout2","Cart")"><button class="checkout-button">Continue to shipping</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="checkout-2str">
+            <div class="div-flex">
+                <img class="checkout-img" src="Pictures/boty1.jpg" alt="boty">
+                <h5>11. Product with video</h5>
+                <p class="checkout-p">$39.00</p>
+            </div>
+            <div class="div-flex">
+                <img class="checkout-img" src="Pictures/boty1.jpg" alt="boty">
+                <h5>11. Product with video</h5>
+                <p class="checkout-p">$39.00</p>
+            </div>
+            <hr>
+            <div>
+                <div class="div-flex">
+                    <h4>Subtotal</h4>
+                    <p class="checkout-p1">$89.00</p>
+                </div>
+                <div class="div-flex">
+                    <h4>Shipping</h4>
+                    <p class="checkout-p1-1">Calculated at next step</p>
+                </div>
+            </div>
+            <hr>
+            <div class="div-flex">
+                <h4>Subtotal</h4>
+                <p class="checkout-p1-1">USD</p>
+                <p class="checkout-p2">$89.00</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

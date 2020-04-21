@@ -6,6 +6,7 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     <link href="~/Content/Layout.css" rel="stylesheet" type="text/css" media="screen" runat="server" />
     <script src="https://code.iconify.design/1/1.0.5/iconify.min.js"></script>
+    <script src="https://kit.fontawesome.com/35e48aa174.js" crossorigin="anonymous"></script>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -22,6 +23,17 @@
                     <span class="iconify" data-icon="ion:logo-instagram" data-inline="false"></span>
                     <span class="iconify" data-icon="ion:logo-youtube" data-inline="false"></span>
                 </div>
+                <div class="Account-select">
+                            <select class="select-upravit">
+                                <option value="My Account">My Account</option>
+                            </select>
+                            <a id="Pipe">|</a>
+                            <select class="select-upravit">
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="CZK">CZK</option>
+                            </select>
+                        </div>
             </div>
             <hr class="header-hr" />
             <div class="Search">
@@ -32,9 +44,9 @@
         </div>
         <div class="references">
             <a href="@Url.Action("Index","Home")">Home</a>
-            <a href="@Url.Action("Products","Home")">Shop</a>
-            <a href="@Url.Action("Products","Home")">Products</a>
-            <a href="@Url.Action("Blog","Home")">Blog</a>
+            <a href="@Url.Action("Index","Products")">Shop</a>
+            <a href="@Url.Action("Index","Products")">Products</a>
+            <a href="@Url.Action("Index","Blog")">Blog</a>
             <a href="@Url.Action("About","Home")">About</a>
             <a href="@Url.Action("Contact","Home")">Contact</a>
         </div>
@@ -84,10 +96,10 @@
         <div class="Social2">
             <p>Copyright <strong>Vesoz</strong> All Right Reserved</p>
             <div class="SocialIcons2">
-                <img src="" alt="Facebook_logo" />
-                <img src="" alt="Twitter_logo" />
-                <img src="" alt="Gmail_logo" />
-                <img src="" alt="Youtube_logo" />
+                <img src="~/Images/facebook.png" alt="Facebook" />
+                <img src="~/Images/twitter.png" alt="Twitter" />
+                <img src="~/Images/google_plus.png" alt="Google_Plus" />
+                <img src="~/Images/youtube.png" alt="Youtube" />
             </div>
         </div>  
     </footer>

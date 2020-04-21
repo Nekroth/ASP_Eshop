@@ -22,9 +22,9 @@
         @foreach (var item in ViewBag.Products)
         {
             <div>
-                <img src="@item.Image" alt="@item.Name" />
+                <img src="~/Images/@item.Image" alt="@item.Name" />
                 <h4>@item.Name</h4>
-                <img src="" alt="stars" />
+                <img class="stars" src="~/Images/stars.png" alt="stars" />
                 <p>$79.00</p>
             </div>
         }

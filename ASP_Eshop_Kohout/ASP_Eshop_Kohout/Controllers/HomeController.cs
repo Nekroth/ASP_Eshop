@@ -17,19 +17,6 @@ namespace WebApplication1.Controllers
             this.ViewBag.Products = Products;
             return View();
         }
-
-        public ActionResult Products()
-        {
-            this.ViewBag.Products = this.context.products.ToList();
-            return View();
-        }
-
-        public ActionResult Blog()
-        {
-            this.ViewBag.Blogs = this.context.blogs.ToList();
-            return View();
-        }
-
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -41,11 +28,6 @@ namespace WebApplication1.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
-            return View();
-        }
-
-        public ActionResult Cart()
-        {
             return View();
         }
     }

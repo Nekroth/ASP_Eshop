@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="Banner">
+    <img src="~/Images/blogBanner.jpg" alt="Blog_Banner" />
+</div>
+
+<div class="Main">
+    <div class="Flex">
+        <div class="Blogs">
+            @foreach (var item in ViewBag.Blogs)
+            {
+                <div>
+                    <img src="../Images/@item.Image" alt="@item.Name" />
+                    <h2>@item.Name</h2>
+                    <p>Debra demo admin | 15 Jan,20</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                    <a href="@Url.Action("Detail","Blog",new { id = item.ID })">Read More</a>
+                </div>
+            }
+        </div>
+        <div class="Sidenav">
+            <div>
+                <label>
+                    <strong>Search</strong>
+                    <br />
+                    <input type="search"
+                           id="searchstore"
+                           name="searchstore"
+                           required
+                           minlength="3"
+                           maxlength="10"
+                           placeholder="Search our store">
+                </label>
+                <input type="submit" value="Search" />
+            </div>
+            <div>
+                <h3>Custom Menu</h3>
+                <p>Home</p>
+                <p>Shop</p>
+                <p>Products</p>
+                <p>Blog</p>
+                <p>About</p>
+                <p>Contact</p>
+            </div>
+            <div>
+                <h3>Recent Post</h3>
+                <div class="miniblog">
+                    <img src="~/Images/blog_01.jpg" alt="blog_01" />
+                    <h5>Temporibus autem...</h5>
+                    <p>Jan 15, 2020</p>
+                </div>
+                <div class="miniblog">
+                    <img src="~/Images/blog_02.jpg" alt="blog_02" />
+                    <h5>Temporibus autem...</h5>
+                    <p>Jan 15, 2020</p>
+                </div>
+                <div class="miniblog">
+                    <img src="~/Images/blog_03.jpg" alt="blog_03" />
+                    <h5>Temporibus autem...</h5>
+                    <p>Jan 15, 2020</p>
+                </div>
+            </div>
+            <div>
+                <h3>Archive</h3>
+                <h2>January 2020</h2>
+                <p>Temporibus Autem Quibusdam</p>
+                <p>Temporibus Autem Quibusdam</p>
+                <p>Temporibus Autem Quibusdam</p>
+                <p>Temporibus Autem Quibusdam</p>
+                <p>Temporibus Autem Quibusdam</p>
+            </div>
+            <div>
+                <h3>Tags</h3>
+                <p>Bestselling</p>
+                <p>Collection</p>
+                <p>Dress</p>
+                <p>Fashion</p>
+                <p>Men</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+

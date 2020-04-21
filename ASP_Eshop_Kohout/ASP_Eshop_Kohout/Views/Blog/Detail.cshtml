@@ -1,27 +1,35 @@
 ﻿
 @{
-    ViewBag.Title = "Blog";
+    ViewBag.Title = "Detail";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="Banner">
-    <img src="~/Images/blogBanner.jpg" alt="Blog_Banner" />
+    <img src="~/Images/blogdetailBanner.jpg" alt="BlogDetail_Banner" />
 </div>
-
 <div class="Main">
     <div class="Flex">
-        <div class="Blogs">
-            @foreach (var item in ViewBag.Blogs)
-            {
-            <div>
-                <img src="@item.Image" alt="@item.Name" />
-                <h2>@item.Name</h2>
-                <p>Debra demo admin | 15 Jan,20</p>
-                <p>Lorem ipsum dolor sit amet, consectetur</p>
-                <input type="submit" value="Read More" />
+        @if (ViewBag.Blog != null)
+        {
+            <div class="blogdetail">
+                <h3>@ViewBag.Blog.Name</h3>
+                <h5>
+                    Posted by: Debra Demo Admin  Posted on: 15 Jan,20
+                </h5>
+                <img src="/Images/@ViewBag.Blog.Image" alt="@ViewBag.Blog.Name" />
+                <br />
+                <p>
+                    On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment,
+                    so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will
+                </p>
+                <div class="tags">
+                    Tags:
+                </div>
+                <form class="commentform">
+
+                </form>
             </div>
-            }           
-        </div>
+        }
         <div class="Sidenav">
             <div>
                 <label>
@@ -48,19 +56,19 @@
             </div>
             <div>
                 <h3>Recent Post</h3>
-                <div>
-                    <img src="" alt="blog_01" />
-                    <h2>Temporibus autem...</h2>
+                <div class="miniblog">
+                    <img src="~/Images/blog_01.jpg" alt="blog_01" />
+                    <h5>Temporibus autem...</h5>
                     <p>Jan 15, 2020</p>
                 </div>
-                <div>
-                    <img src="" alt="blog_02" />
-                    <h2>Temporibus autem...</h2>
+                <div class="miniblog">
+                    <img src="~/Images/blog_02.jpg" alt="blog_02" />
+                    <h5>Temporibus autem...</h5>
                     <p>Jan 15, 2020</p>
                 </div>
-                <div>
-                    <img src="" alt="blog_03" />
-                    <h2>Temporibus autem...</h2>
+                <div class="miniblog">
+                    <img src="~/Images/blog_03.jpg" alt="blog_03" />
+                    <h5>Temporibus autem...</h5>
                     <p>Jan 15, 2020</p>
                 </div>
             </div>
@@ -84,3 +92,4 @@
         </div>
     </div>
 </div>
+

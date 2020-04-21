@@ -4,5 +4,66 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+    <section>
+        <table class="table-posun">
+            <tr>
+                <th>Image</th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Remove</th>
+            </tr>
+            <tr>
+                <td><img class="td-img" src="~/Images/Product01.jpg" alt="boty"></td>
+                <td>Saty</td>
+                <td>$39.00</td>
+                <td><input type="number"></td>
+                <td>$39.00</td>
+                <td><a href="x">X</a></td>
+            </tr>
+            <tr>
+                <td><img class="td-img" src="~/Images/Product01.jpg" alt=""></td>
+                <td>Saty</td>
+                <td>$39.00</td>
+                <td><input type="number"></td>
+                <td>$39.00</td>
+                <td><a href="x">X</a></td>
+            </tr>
+        </table>
+        <div class="button-table-posun">
+            <button class="button-table">Update Cart</button>
+            <button class="button-table">Continue Shopping</button>
+            <button class="button-table">Clear Cart</button>
+        </div>
+        <div class="Total-all">
+            <div class="section-total">
+                <h2>Get shipping estimatess</h2>
+                <select class="select-total">
+                    <option value="---">---</option>
+                    <option value="#">#</option>
+                    <option value="##">##</option>
+                </select>
+                <br>
+                <input class="input-total" type="text" placeholder="Zip/Postal Code">
+                <br>
+                <button class="button-total">Calculate shipping</button>
+            </div>
+            <div class="total-total">
+                <h2>Cart Totals</h2>
+                <table class="total-table">
+                    <tr>
+                        <td><strong>Subtotal</strong></td>
+                        <td>$89.00</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong>$89.00</strong></td>
+                    </tr>
+                </table>
+                <a href="@Url.Action("Checkout1","Cart")"><button onclick="@Url.Action("Checkout1","Cart")" class="button-total">Proceed to Checkout</button></a>
+            </div>
+        </div>
+
+    </section>
 
