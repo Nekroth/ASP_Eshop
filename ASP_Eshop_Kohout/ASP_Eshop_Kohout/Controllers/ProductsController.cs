@@ -18,6 +18,7 @@ namespace WebApplication1.Controllers
         }
         public ActionResult Detail(int? id)
         {
+            this.ViewBag.RelatedProducts = this.context.products.ToList().Take(4);
             this.ViewBag.Product = this.context.products.ToList().Find(t => t.ID == id);
             return View();
         }

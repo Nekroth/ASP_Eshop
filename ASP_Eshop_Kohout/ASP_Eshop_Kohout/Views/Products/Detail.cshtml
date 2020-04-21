@@ -13,7 +13,7 @@
         <div class="productdetail">
             <img src="/Images/@ViewBag.Product.Image" alt="@ViewBag.Product.Name" />
             <h4>@ViewBag.Product.Name</h4>
-            <img src="" alt="rating" />
+            <p>rating</p>
             <h4>Price</h4>
             <p>Vendor: Vendor 5</p>
             <p>SKU: 101</p>
@@ -28,12 +28,77 @@
 
             </div>
         </div>
-        <a href="@Url.Action("AddItem","Cart",new { name = ViewBag.Product.Name, image = ViewBag.Product.Image})"><button class="buy-button">Add to cart</button></a>
+        <div>
+            <p>QTY</p>
+            <input type="number" value="">
+            <a href="@Url.Action("AddItem","Cart",new { name = ViewBag.Product.Name, image = ViewBag.Product.Image})"><button class="buy-button">Add to cart</button></a>
+        </div>
         <br />
-        <a href=""><button class="buy-button">Buy it now</button></a>
+        <a href=""><button class="buy-button" id="buyitnow">Buy it now</button></a>
     }
-    <div class="drcss">
-
+    <br />
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'desc')" id="defaultOpen">Description</button>
+        <button class="tablinks" onclick="openTab(event, 'rev')">Reviews</button>
+        <button class="tablinks" onclick="openTab(event, 'com')">Comments</button>
+        <button class="tablinks" onclick="openTab(event, 'ship')">Shipping Policy</button>
+        <button class="tablinks" onclick="openTab(event, 'size')">Size Chart</button>
+    </div>
+    <div id="desc" class="tabcontent">
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut 
+        labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea 
+        commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
     </div>
 
+    <div id="rev" class="tabcontent">
+        <p>Reviews</p>
+    </div>
+
+    <div id="com" class="tabcontent">
+        <p>Comments</p>
+    </div>
+    <div id="ship" class="tabcontent">
+        <p>Shipping Policy</p>
+    </div>
+    <div id="size" class="tabcontent">
+        <p>Size Chart</p>
+    </div>
+    <div>
+
+    </div>
+    <script>
+        function openTab(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+    <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+    <div class="relatedProducts">
+        <div class="Flex">
+            @foreach (var item in ViewBag.RelatedProducts)
+            {
+                <a href="@Url.Action("Detail","Products",new { id = item.ID })">
+                    <div>
+                        <img src="/Images/@item.Image" alt="@item.Name" />
+                        <h4>@item.Name</h4>
+                        <img src="" alt="stars" />
+                        <p>$79.00</p>
+                    </div>
+                </a>
+            }
+        </div>
+    </div>
 </div>

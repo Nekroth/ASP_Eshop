@@ -21,5 +21,13 @@ namespace WebApplication1.Controllers
 
             return View();
         }
+        public ActionResult Products()
+        {
+            return View();
+        }
+        public ActionResult Blogs()
+        {
+            return View();
+        }
     }
 }
